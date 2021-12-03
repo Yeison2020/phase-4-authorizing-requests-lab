@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+   has_secure_password
 
   def show
     user = User.find(session[:user_id])
